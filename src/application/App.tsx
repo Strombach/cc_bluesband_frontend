@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { Navbar } from './components';
+import { Navbar, DrawerMenu } from './components';
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
         tabs={tabs}
         title={"CC-Bluesband"}
       />
+      <DrawerMenu tabs={tabs} />
     </div>
   );
 }
