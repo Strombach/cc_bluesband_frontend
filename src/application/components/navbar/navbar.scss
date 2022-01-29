@@ -5,7 +5,7 @@
     justify-content: space-between;
     padding: 15px;
 
-    .nav-links {
+    .menu {
         display: none;
     }
 }
@@ -19,14 +19,14 @@
         padding: 15px;
         width: 100%;
 
-        .nav-links {
+        .menu {
             display: flex;
             justify-content: space-around;
             margin: 0;
             padding: 0;
             width: 20vw;
 
-            .nav-link {
+            .menu-link {
                 list-style: none;
             }
         }

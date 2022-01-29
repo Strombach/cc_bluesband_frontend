@@ -1,2 +1,2 @@
 export { default as Navbar } from './navbar';
-export { default as DrawerMenu } from './drawerMenu';
+export { default as ContentContainer } from './contentContainer';

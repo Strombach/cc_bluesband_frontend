@@ -1,28 +1,32 @@
 import React from 'react';
 import './App.scss';
-import { Navbar, DrawerMenu } from './components';
+import { BrowserRouter } from 'react-router-dom';
+import { Navbar, ContentContainer } from './components';
 
 function App() {
 
   const tabs = [
     {
-      title: "Home"
+      title: "Home",
+      path: "/"
     },
     {
-      title: "Events"
+      path: "events"
     },
     {
-      title: "About"
+      path: "about"
     }
   ];
 
   return (
     <div className="App">
-      <Navbar
-        tabs={tabs}
-        title={"CC-Bluesband"}
-      />
-      <DrawerMenu tabs={tabs} />
+      <BrowserRouter>
+        <Navbar
+          tabs={tabs}
+          title={"CC-Bluesband"}
+        />
+        <ContentContainer />
+      </BrowserRouter>
     </div>
   );
 }
