@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './navbar.scss';
 import PropsInterface from './PropsInterface';
 import BurgerMenu from './burgerMenu';
 import Menu from './menu';

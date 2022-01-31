@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './contentContainer.scss';
 import { Routes, Route } from 'react-router-dom';
 import { About, Test } from './routes';
 
@@ -18,7 +17,6 @@ function ContentContainer() {
                     }
                 />
             </Routes>
-            <h1>Hello world!</h1>
         </div>
     );
 }
