@@ -1,8 +1,16 @@
 .App {
   background-color: black;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   min-width: 75vw;
   overflow: auto;
+
+  .wrapper {
+    flex-grow: 1;
+    min-height: 100%;
+    min-width: 100%;
+  }
 }
 
 h1,h2,h3,h4,h5,h6 {

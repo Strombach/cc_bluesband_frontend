@@ -22,7 +22,9 @@ function App() {
         tabs={tabs}
         title={"CC-Bluesband"}
       />
-      <ContentContainer />
+      <div className="wrapper">
+        <ContentContainer />
+      </div>
       <Footer />
     </div>
   );

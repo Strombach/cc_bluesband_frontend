@@ -1,6 +1,6 @@
 
 .navbar {
-    background-color: aquamarine;
+    background-color: rgb(194, 126, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
 @media screen and (min-width: 764px) {
 
     .navbar {
-        background-color: aquamarine;
+        // background-color: aquamarine;
         display: flex;
         justify-content: space-around;
         padding: 15px;
