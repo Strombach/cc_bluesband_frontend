@@ -1,4 +1,4 @@
-function MainText() {
+function TopText() {
     return (
         <div className="main-text">
             <h1>CC Bluesband</h1>
@@ -7,4 +7,4 @@ function MainText() {
     );
 }
 
-export default MainText;
+export default TopText;

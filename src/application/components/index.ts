@@ -1,3 +1,5 @@
-export { default as Navbar } from './navbar';
-export { default as ContentContainer } from './main';
-export { default as Footer } from './footer';
+export { default as Burgermenu } from './burgerMenu';
+export { default as Menu } from './menu';
+export { default as TopText } from './topText';
+export { default as TopPhoto } from './topPhoto';
+export { default as EventsContainer } from './eventsContainer';

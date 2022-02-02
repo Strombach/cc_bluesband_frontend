@@ -1,5 +1,11 @@
-import React from 'react';
-import { Navbar, ContentContainer, Footer } from './components';
+
+// import {
+//   Navbar,
+//   Main, Footer
+// } from 'application';
+import Navbar from './navbar';
+import Main from './main';
+import Footer from './footer';
 
 function App() {
 
@@ -23,7 +29,7 @@ function App() {
         title={"CC-Bluesband"}
       />
       <div className="wrapper">
-        <ContentContainer />
+        <Main />
       </div>
       <Footer />
     </div>

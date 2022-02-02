@@ -1,4 +1,4 @@
-function MainPhoto() {
+function TopPhoto() {
     return (
         <div className="main-photo">
             <img src="/img/cc_bluesband.jpeg" alt="" />
@@ -6,4 +6,4 @@ function MainPhoto() {
     );
 }
 
-export default MainPhoto;
+export default TopPhoto;

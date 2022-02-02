@@ -1,36 +1,72 @@
 .main-container {
-    color: white;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
-        
-    .main-photo{
-            img {
-                min-height: 100%;
-                max-width: 100%;
+
+    .content{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+            
+        .main-photo{
+                img {
+                    min-height: 100%;
+                    max-width: 100%;
+                }
             }
-        }
+    }
 
 
     @media screen and (min-width: 764px) {
-        flex-direction: row;
-        justify-content: space-between;
 
-        .main-photo{
-            max-width: 50%;
-            img {
-                min-height: 100%;
-                max-width: 100%;
+        .content {
+            flex-direction: row;
+            justify-content: space-around;
+    
+            .main-photo{
+                img {
+                    min-height: 100%;
+                    max-width: 100%;
+                }
+            }
+    
+            .main-text {
+                display: block;
+                flex-direction: column;
+                justify-content: center;
+                min-width: 50%;
             }
         }
+    }
 
-        .main-text {
+    @media screen and (min-width: 2149px) {
+
+        .top-content {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            height: 100%;
-            min-width: 50%;
+            
+            .content {
+                min-width: 95%;
+
+                .main-text {
+                    display: flex;
+                    flex-grow: 1;
+                    min-height: 100%;
+                    max-width: 50%;
+                    padding: 20px;
+                }
+    
+                .main-photo{
+                    min-width: 50%;
+
+                    img {
+                        min-width: 100%;
+                    }
+                }
+            }
         }
     }
 }
