@@ -6,7 +6,7 @@ import Menu from './menu';
 const Navbar = (props: PropsInterface): JSX.Element => {
     return (
         <nav className='navbar'>
-            <h1 className='nav-title'>{props.title}</h1>
+            <img className="site-logo" src="/img/cc_logo.png" alt="" />
             <Menu tabs={props.tabs} />
             <BurgerMenu tabs={props.tabs} />
         </nav>

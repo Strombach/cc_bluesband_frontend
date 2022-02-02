@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { Navbar, ContentContainer } from './components';
+import { Navbar, ContentContainer, Footer } from './components';
 
 function App() {
 
@@ -19,13 +18,12 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar
-          tabs={tabs}
-          title={"CC-Bluesband"}
-        />
-        <ContentContainer />
-      </BrowserRouter>
+      <Navbar
+        tabs={tabs}
+        title={"CC-Bluesband"}
+      />
+      <ContentContainer />
+      <Footer />
     </div>
   );
 }
