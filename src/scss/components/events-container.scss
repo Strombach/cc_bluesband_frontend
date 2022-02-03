@@ -1,4 +1,28 @@
 .events-container{
-    background-color: black;
+    display:flex;
+    flex-direction: row;
     color: white;
+    
+    .event {
+        background-color: rgb(206, 206, 206);
+        color:black;
+        margin: 10px;
+        max-width: 20vw;
+        padding: 10px;
+
+        img {
+            display: absolute;
+            width: 100%;
+        }
+
+        .test {
+            display: grid;
+            grid-template-columns: 20% 20%;
+            grid-gap: 20px;
+            
+            p {
+                margin:0
+            }
+        }
+    }
 }

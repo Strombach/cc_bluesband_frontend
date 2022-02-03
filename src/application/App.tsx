@@ -1,8 +1,4 @@
 
-// import {
-//   Navbar,
-//   Main, Footer
-// } from 'application';
 import Navbar from './navbar';
 import Main from './main';
 import Footer from './footer';
