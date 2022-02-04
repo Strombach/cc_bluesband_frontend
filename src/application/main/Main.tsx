@@ -6,9 +6,6 @@ import {
 import PropsInterface from './PropsInterface';
 
 function Main(props: PropsInterface) {
-
-
-
     return (
         <div className="main-container">
             <div className="top-content">

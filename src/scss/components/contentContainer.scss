@@ -3,8 +3,6 @@
     flex-direction: column;
     text-align: center;
 
-
-
     .content {
         background-color: $base-color;
         color: $base-text-color;
@@ -24,7 +22,7 @@
 
     @media screen and (min-width: 764px) {
         .top-content {
-            margin: 20px;
+            margin: 0;
         }
 
         .content {
