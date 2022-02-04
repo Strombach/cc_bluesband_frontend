@@ -3,24 +3,29 @@
     flex-direction: column;
     text-align: center;
 
-    .content{
-        background-color: black;
-        color: white;
+
+
+    .content {
+        background-color: $base-color;
+        color: $base-text-color;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
             
-        .main-photo{
-                img {
-                    min-height: 100%;
-                    max-width: 100%;
-                }
+        .main-photo {
+            img {
+                min-height: 100%;
+                max-width: 100%;
             }
+        }
     }
 
 
     @media screen and (min-width: 764px) {
+        .top-content {
+            margin: 20px;
+        }
 
         .content {
             flex-direction: row;

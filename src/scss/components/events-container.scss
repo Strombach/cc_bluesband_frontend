@@ -1,28 +1,70 @@
-.events-container{
-    display:flex;
-    flex-direction: row;
+.events-container {
     color: white;
-    
-    .event {
-        background-color: rgb(206, 206, 206);
-        color:black;
-        margin: 10px;
-        max-width: 20vw;
-        padding: 10px;
+    overflow: hidden;
+    border: solid 2px;
+    border-color: rgb(56, 56, 56);
+    margin: 20px;
 
-        img {
-            display: absolute;
-            width: 100%;
-        }
+    .event-header {
+        margin: 20px;
+    }
 
-        .test {
-            display: grid;
-            grid-template-columns: 20% 20%;
-            grid-gap: 20px;
-            
-            p {
-                margin:0
+    .event-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px;
+        
+        .event {
+            background-color: whitesmoke;
+            border-radius: 5px;
+            color: black;
+            min-width: 400px;
+            max-width: 400px;
+            min-height: 600px;
+            padding: 10px;
+            margin: 20px;
+
+            &-picture{
+                display: block;
+                max-width: 100%;
+                position: relative;
+                margin: 20px;
+            }
+
+            .event-text {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                
+                * {
+                    margin: 10px;
+                }
+            }
+
+            .event-link {
+                margin: 15px;
             }
         }
     }
+    
+    @media screen and (max-width: 900px) {
+        .event-content{
+            flex-direction: column;
+            align-items: center;
+
+            .event {
+                min-height: 100%;
+                min-width: 150px;
+                max-width: 400px;
+                
+                &-picture{
+                    display: block;
+                    max-width: 90%;
+                    position: relative;
+                    margin: 5% auto;
+                }
+            }
+        }
+    }       
 }

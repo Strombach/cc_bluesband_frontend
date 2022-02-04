@@ -8,7 +8,7 @@ const Navbar = (props: PropsInterface): JSX.Element => {
         <nav className='navbar'>
             <img className="site-logo" src="/img/cc_logo.png" alt="" />
             <Menu tabs={props.tabs} />
-            <Burgermenu tabs={props.tabs} />
+            {/* <Burgermenu tabs={props.tabs} /> */}
         </nav>
     );
 };
