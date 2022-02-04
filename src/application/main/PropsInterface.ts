@@ -1,7 +1,5 @@
 interface PropsInterface {
-    tabs: Array<any>;
-    title: string;
-    contents: any;
+    content: any;
 }
 
 export default PropsInterface;

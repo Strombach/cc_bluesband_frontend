@@ -1,38 +1,26 @@
 import { Event } from 'application/components';
+import PropsInterface from './PropsInterface';
 
-function EventsContainer() {
+function EventsContainer(props: PropsInterface) {
 
-    const events = [
-        {
-            title: "Smoke",
-            date: "2020-02-01",
-            time: "12:00",
-            location: "Smoke",
-            reservation: false,
-            link: "https://google.se"
-        },
-        {
-            title: "Harry's",
-            location: "Någon annanstans",
-            reservation: true,
-            link: "https://youtube.se"
-        },
-        {
-            title: "Harry's",
-            location: "Någon annanstans",
-            reservation: true,
-            link: "https://youtube.se"
-        }
-    ];
+    console.log(props.events.length);
 
     return (
-        <div className="events-container">
-            <h2 className='event-header'>Kommande event</h2>
-            <div className="event-content">
-                {events.map((event, index) => {
-                    return <Event key={index} event={event} />;
-                })}
-            </div>
+        <div className={`event-container${(props.events.length <= 1) ? "-short" : "-long"}`}>
+            {(props.events.length >= 1) &&
+                (
+                    <>
+                        <h2 className={"event-header"}>
+                            Kommande event
+                        </h2>
+                        <div className={`event-content`}>
+                            {props.events.map((event, index) => {
+                                return <Event key={index} event={event} />;
+                            })}
+                        </div>
+                    </>
+                )
+            }
         </div>
     );
 }

@@ -3,8 +3,12 @@ import {
     TopPhoto,
     EventsContainer
 } from "application/components";
+import PropsInterface from './PropsInterface';
 
-function Main() {
+function Main(props: PropsInterface) {
+
+
+
     return (
         <div className="main-container">
             <div className="top-content">
@@ -13,7 +17,7 @@ function Main() {
                     <TopPhoto />
                 </div>
             </div>
-            <EventsContainer />
+            <EventsContainer events={props.content.events} />
         </div>
     );
 }

@@ -1,54 +1,71 @@
-.events-container {
-    color: white;
-    overflow: hidden;
-    border: solid 2px;
-    border-color: rgb(56, 56, 56);
-    margin: 20px;
+.event-container {
 
-    .event-header {
+    &-short {
+        max-width: calc(50% - 40px);
+        margin: 0 20px;
+    }
+
+    &-long {
         margin: 20px;
     }
 
-    .event-content {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 20px;
-        
-        .event {
-            background-color: whitesmoke;
-            border-radius: 5px;
-            color: black;
-            min-width: 400px;
-            max-width: 400px;
-            min-height: 600px;
-            padding: 10px;
+    &-long, &-short {
+        color: white;
+        overflow: hidden;
+        border: solid 2px;
+        border-color: rgb(56, 56, 56);
+
+        .event-header {
             margin: 20px;
-
-            &-picture{
-                display: block;
-                max-width: 100%;
-                position: relative;
+        }
+    
+        .event-content {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .event {
+                background-color: whitesmoke;
+                border-radius: 5px;
+                color: black;
+                min-width: 400px;
+                max-width: 400px;
+                min-height: 600px;
+                padding: 10px;
                 margin: 20px;
-            }
-
-            .event-text {
-                display: grid;
-                grid-template-columns: 50% 50%;
-                
-                * {
-                    margin: 10px;
+    
+                &-picture{
+                    display: block;
+                    max-width: 100%;
+                    position: relative;
+                    margin: 20px;
                 }
-            }
-
-            .event-link {
-                margin: 15px;
+    
+                .event-text {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    
+                    * {
+                        margin: 10px;
+                    }
+                }
+    
+                .event-link {
+                    margin: 15px;
+                }
             }
         }
     }
+
     
     @media screen and (max-width: 900px) {
+
+
+    &-short {
+        max-width: 100%;
+    }
+
         .event-content{
             flex-direction: column;
             align-items: center;
