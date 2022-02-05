@@ -1,0 +1,32 @@
+.about-container {
+    color: $base-text-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // max-width: calc(50% - 40px);
+    min-width: calc(50% - 40px);
+    margin: 0 20px;
+
+    .band-members {
+        display: flex;
+        flex-wrap: wrap;
+
+        p {
+            min-width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        min-width: calc(100% - 40px);
+        margin: 0 20px;
+
+        .band-members {
+            display: flex;
+            flex-wrap: wrap;
+
+            p {
+                min-width: 100%;
+            }
+        }
+    }       
+}

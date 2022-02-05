@@ -4,3 +4,4 @@ export { default as TopText } from './topText';
 export { default as TopPhoto } from './topPhoto';
 export { default as EventsContainer } from './eventsContainer';
 export { default as Event } from './event';
+export { default as About } from './about';

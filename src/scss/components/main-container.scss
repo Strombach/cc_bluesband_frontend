@@ -7,7 +7,7 @@
         background-color: $base-color;
         color: $base-text-color;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         text-align: center;
             
@@ -42,6 +42,14 @@
                 justify-content: center;
                 min-width: 50%;
             }
+        }
+
+        .second-content {
+            min-width: 100%;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
     }
 

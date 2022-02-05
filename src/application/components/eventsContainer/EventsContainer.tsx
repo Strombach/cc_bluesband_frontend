@@ -6,9 +6,9 @@ function EventsContainer(props: PropsInterface) {
     console.log(props.events.length);
 
     return (
-        <div className={`event-container${(props.events.length <= 1) ? "-short" : "-long"}`}>
+        <>
             {(props.events.length >= 1) &&
-                (
+                <div className={`event-container${(props.events.length <= 1) ? "-short" : "-long"}`}>
                     <>
                         <h2 className={"event-header"}>
                             Kommande event
@@ -19,9 +19,9 @@ function EventsContainer(props: PropsInterface) {
                             })}
                         </div>
                     </>
-                )
+                </div>
             }
-        </div>
+        </>
     );
 }
 

@@ -1,7 +1,8 @@
 import {
     TopText,
     TopPhoto,
-    EventsContainer
+    EventsContainer,
+    About
 } from "application/components";
 import PropsInterface from './PropsInterface';
 
@@ -14,7 +15,10 @@ function Main(props: PropsInterface) {
                     <TopPhoto />
                 </div>
             </div>
-            <EventsContainer events={props.content.events} />
+            <div className="second-content">
+                <EventsContainer events={props.content.events} />
+                <About />
+            </div>
         </div>
     );
 }

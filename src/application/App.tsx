@@ -21,29 +21,29 @@ function App() {
   const content = {
     about: {},
     events: [
-      {
-        title: "KJ's Ronneby",
-        date: "2022-02-26",
-        time: "19:00",
-        location: "Ronneby",
-        reservation: false,
-      },
-      {
-        title: "Smoke",
-        date: "2020-02-01",
-        time: "12:00",
-        location: "Smoke",
-        reservation: true,
-        link: "https://google.se"
-      },
-      {
-        title: "Harry's",
-        date: "2020-02-01",
-        time: "19:00",
-        location: "Någon annanstans",
-        reservation: true,
-        link: "https://youtube.se"
-      }
+      // {
+      //   title: "KJ's Ronneby",
+      //   date: "2022-02-26",
+      //   time: "19:00",
+      //   location: "Ronneby",
+      //   reservation: false,
+      // },
+      // {
+      //   title: "Smoke",
+      //   date: "2020-02-01",
+      //   time: "12:00",
+      //   location: "Smoke",
+      //   reservation: true,
+      //   link: "https://google.se"
+      // },
+      // {
+      //   title: "Harry's",
+      //   date: "2020-02-01",
+      //   time: "19:00",
+      //   location: "Någon annanstans",
+      //   reservation: true,
+      //   link: "https://youtube.se"
+      // }
     ]
   };
 
