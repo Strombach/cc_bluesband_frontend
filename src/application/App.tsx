@@ -21,13 +21,13 @@ function App() {
   const content = {
     about: {},
     events: [
-      // {
-      //   title: "KJ's Ronneby",
-      //   date: "2022-02-26",
-      //   time: "19:00",
-      //   location: "Ronneby",
-      //   reservation: false,
-      // },
+      {
+        title: "KJ's Ronneby",
+        date: "2022-02-26",
+        time: "19:00",
+        location: "Ronneby",
+        reservation: false,
+      },
       // {
       //   title: "Smoke",
       //   date: "2020-02-01",
