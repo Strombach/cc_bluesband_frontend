@@ -14,8 +14,12 @@ function Footer() {
                 </div>
                 <div className="socialmedia">
                     <ul>
-                        <li>Facebook</li>
-                        <li>Youtube</li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCu2E9rRYua4_HLhFItrPGFw/featured">Youtube</a>
+                        </li>
+                        <li>
+                            <a href="fb://www.facebook.com/cc.bluesband.3">Facebook</a>
+                        </li>
                     </ul>
                 </div>
             </div>

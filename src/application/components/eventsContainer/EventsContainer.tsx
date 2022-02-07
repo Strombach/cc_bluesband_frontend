@@ -2,9 +2,6 @@ import { Event } from 'application/components';
 import PropsInterface from './PropsInterface';
 
 function EventsContainer(props: PropsInterface) {
-
-    console.log(props.events.length);
-
     return (
         <>
             {(props.events.length >= 1) &&
