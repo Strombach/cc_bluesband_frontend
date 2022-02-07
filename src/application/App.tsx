@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet';
 import Navbar from './navbar';
 import Main from './main';
 import Footer from './footer';
@@ -49,6 +50,9 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>CC-Bluesband</title>
+      </Helmet>
       <Navbar
         tabs={tabs}
         title={"CC-Bluesband"}
